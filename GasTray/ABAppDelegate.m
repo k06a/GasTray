@@ -48,7 +48,7 @@
         }
 
         dispatch_async(dispatch_get_main_queue(), ^{
-            self.statusBar.title = [[NSString stringWithFormat:@"%.2f Gwei", [json[@"slow"] floatValue]] stringByReplacingOccurrencesOfString:@".00" withString:@""];
+            self.statusBar.title = [[NSString stringWithFormat:@"%.2f Gwei", [json[@"fast"] floatValue]] stringByReplacingOccurrencesOfString:@".00" withString:@""];
             self.slowLabel.title = [[NSString stringWithFormat:@"%.2f Gwei", [json[@"slow"] floatValue]] stringByReplacingOccurrencesOfString:@".00" withString:@""];
             self.standardLabel.title = [[NSString stringWithFormat:@"%.2f Gwei", [json[@"standard"] floatValue]] stringByReplacingOccurrencesOfString:@".00" withString:@""];
             self.fastLabel.title = [[NSString stringWithFormat:@"%.2f Gwei", [json[@"fast"] floatValue]] stringByReplacingOccurrencesOfString:@".00" withString:@""];
